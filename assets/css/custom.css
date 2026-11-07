@@ -2,6 +2,16 @@
   display: none;
 }
 
+/* rampatra-style bottom bar: header sits under the gallery */
+body > header {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+body > main > section.gallery {
+  margin-bottom: 0;
+}
+
 .pswp__dynamic-caption .caption-title {
   font-weight: 600;
 }
