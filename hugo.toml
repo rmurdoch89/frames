@@ -20,7 +20,7 @@ theme = "gallery"
   [imaging.exif]
     disableDate = false
     disableLatLong = true
-    includeFields = "ImageDescription|Orientation"
+    includeFields = "ImageDescription|Orientation|Model|LensModel|FNumber|ExposureTime|ISO"
 
 [outputs]
   home = ["HTML", "RSS"]

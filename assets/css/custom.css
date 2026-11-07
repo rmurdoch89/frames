@@ -1,0 +1,14 @@
+.pswp-caption-content {
+  display: none;
+}
+
+.pswp__dynamic-caption .caption-title {
+  font-weight: 600;
+}
+
+.pswp__dynamic-caption .caption-exif {
+  opacity: 0.65;
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.15em;
+}
