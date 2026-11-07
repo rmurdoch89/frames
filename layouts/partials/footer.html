@@ -1,0 +1,30 @@
+<footer>
+  <div class="footer-bar">
+    <a href="{{ .Site.Home.RelPermalink }}">Photography by {{ site.Params.author.name | default site.Title }}</a>
+    <button type="button" id="about-open">About <span class="about-icon" aria-hidden="true">i</span></button>
+  </div>
+</footer>
+<div class="about-overlay" id="about-overlay" role="dialog" aria-modal="true" aria-labelledby="about-title" hidden>
+  <div class="about-card">
+    <button type="button" class="about-close" id="about-close" aria-label="Close">&times;</button>
+    <h2 id="about-title">About</h2>
+    <p>A personal project — photos by Rob Murdoch.</p>
+    <p>Shot on a Panasonic G85. Everything here is culled and edited by hand: no AI images, no stock, no filler.</p>
+    <p>I'm drawn to black and white for its simplicity. Most of what I shoot is landscape, street, and natural portraits — people as they are, not posed.</p>
+  </div>
+</div>
+<script>
+  (() => {
+    const openBtn = document.getElementById("about-open");
+    const overlay = document.getElementById("about-overlay");
+    if (!openBtn || !overlay) return;
+    const closeBtn = document.getElementById("about-close");
+    const open = () => { overlay.hidden = false; document.body.style.overflow = "hidden"; };
+    const close = () => { overlay.hidden = true; document.body.style.overflow = ""; };
+    openBtn.addEventListener("click", open);
+    closeBtn.addEventListener("click", close);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !overlay.hidden) close(); });
+  })();
+</script>
+

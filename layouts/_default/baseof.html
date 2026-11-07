@@ -6,7 +6,6 @@
     <main>
       {{ block "main" . }}{{ end }}
     </main>
-    {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     {{ block "footer" . }}{{ partialCached "footer.html" . }}{{ end }}
   </body>
 </html>
