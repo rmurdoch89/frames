@@ -1,0 +1,28 @@
+baseURL = "https://frames.rumbo.dev/"
+defaultContentLanguage = "en"
+languageCode = "en"
+timeZone = "Australia/Sydney"
+title = "Frames"
+timeout = "120s"
+enableRobotsTXT = true
+theme = "gallery"
+
+[params]
+  defaultTheme = "dark"
+  description = "Photos by Rob Murdoch"
+  title = "Frames"
+  [params.author]
+    name = "Rob Murdoch"
+
+[imaging]
+  quality = 80
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
