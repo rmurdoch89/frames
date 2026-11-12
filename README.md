@@ -1,6 +1,6 @@
 # Frames
 
-Photo showcase at [frames.rumbo.dev](https://frames.rumbo.dev) — built with [Hugo](https://gohugo.io) and [hugo-theme-gallery](https://github.com/nicokaiser/hugo-theme-gallery).
+Photo showcase at [rumbo.darkroom.page](https://rumbo.darkroom.page) — built with [Hugo](https://gohugo.io) and [hugo-theme-gallery](https://github.com/nicokaiser/hugo-theme-gallery).
 
 ## Adding photos
 
